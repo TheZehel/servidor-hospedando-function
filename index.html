@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Frete</title>
+</head>
+
+<body onload="geraOptions()">
+    <form id="form" action="index.html" method="post">
+        <p>Nome: <input type="text" id="nome" value=""></p>
+        <p>Produto: <input type="text" id="produto" value=""></p>
+
+        <p>Estado:
+            <select id="estados">
+            </select>
+        </p>
+
+
+        <p>Regioes:
+            <select id="regioes">
+            </select>
+        </p>
+
+        <button type="button" onclick="calculaFrete()" >Finalizar</button>
+    </form>
+
+    <script src="/calculaFrete.js"></script>
+</body>
+
+</html>
